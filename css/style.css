@@ -1,0 +1,167 @@
+/* ===== CULORI (paleta proiectului) ===== */
+:root {
+  --pink:  #D6336C;  /* roz intens: butoane, accente */
+  --blush: #F8C8DC;  /* roz pudră: fundaluri, bordări */
+  --lav:   #B8A1E3;  /* lavandă: detalii, hover */
+  --cream: #FFF5F7;  /* crem: fundalul paginii */
+  --plum:  #3D2C4D;  /* mov închis: textul */
+}
+
+/* ===== BAZA PAGINII ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--cream);
+  color: var(--plum);
+  line-height: 1.65;
+}
+h1, h2, h3, .navbar-brand, .brand-f {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+a { color: var(--pink); }
+
+/* ===== MENIU ===== */
+.site-nav {
+  background: var(--cream);
+  border-bottom: 2px solid var(--blush);
+}
+.navbar-brand { color: var(--pink) !important; font-size: 1.5rem; }
+.nav-link { color: var(--plum) !important; font-weight: 500; }
+.nav-link.active {
+  color: var(--pink) !important;
+  text-decoration: underline;
+  text-decoration-color: var(--blush);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+/* ===== BUTOANE ===== */
+.btn { border-radius: 50px; padding: .5rem 1.4rem; font-weight: 500; }
+.btn-sm { padding: .25rem .9rem; }
+.btn-pink { background: var(--pink); color: #fff; border: 2px solid var(--pink); }
+.btn-pink:hover { background: var(--plum); border-color: var(--plum); color: #fff; }
+.btn-soft { background: var(--blush); color: var(--plum); border: 2px solid var(--blush); }
+.btn-soft:hover { background: var(--lav); border-color: var(--lav); color: var(--plum); }
+
+/* ===== HERO ===== */
+.hero {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, var(--blush) 0%, var(--cream) 70%);
+}
+.hero h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); margin-bottom: 1.2rem; }
+.blob {
+  background: linear-gradient(145deg, var(--lav), var(--blush));
+  border-radius: 62% 38% 55% 45% / 50% 60% 40% 50%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.seat-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 1.4rem;
+  box-shadow: 0 12px 30px rgba(61, 44, 77, .18);
+  transform: rotate(-3deg);
+  max-width: 280px;
+}
+
+/* ===== SECȚIUNI ȘI CATEGORII ===== */
+.section { padding: 3.5rem 12px; }
+.cat {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  background: #fff;
+  border: 2px solid var(--blush);
+  border-radius: 50px;
+  padding: .9rem 1.2rem;
+  text-decoration: none;
+  color: var(--plum);
+  font-weight: 500;
+}
+.cat i { color: var(--pink); font-size: 1.3rem; }
+.cat:hover { background: var(--blush); }
+
+/* ===== CARDURI DE CURSURI ===== */
+.course {
+  border: 0;
+  border-radius: 28px 28px 20px 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(61, 44, 77, .1);
+}
+.thumb {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: #fff;
+}
+.thumb.big { height: 260px; border-radius: 28px; font-size: 5rem; margin-bottom: 1.5rem; }
+.t1 { background: linear-gradient(135deg, #D6336C, #F8C8DC); }
+.t2 { background: linear-gradient(135deg, #8E6FD1, #B8A1E3); }
+.t3 { background: linear-gradient(135deg, #E98AB0, #B8A1E3); }
+.t4 { background: linear-gradient(135deg, #B8A1E3, #F8C8DC); }
+.badge-cat {
+  display: inline-block;
+  background: var(--blush);
+  color: var(--plum);
+  border-radius: 50px;
+  padding: .15rem .8rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+/* ===== BULINELE DE LOCURI (elementul unic) ===== */
+.dots { display: flex; gap: 5px; margin: .3rem 0 .4rem; }
+.dots i {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid var(--lav);
+  display: block;
+}
+.dots i.on { background: var(--pink); border-color: var(--pink); }
+
+/* ===== PASII DE ÎNSCRIERE, FORMULARE, TABELE ===== */
+.steps { background: var(--plum); color: var(--cream); padding: 3.5rem 0; }
+.side {
+  background: #fff;
+  border: 2px solid var(--blush);
+  border-radius: 24px;
+  padding: 1.5rem;
+}
+.table { --bs-table-bg: transparent; color: var(--plum); }
+.form-control, .form-select { border-radius: 14px; border: 2px solid var(--blush); }
+.form-control:focus {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 .2rem rgba(214, 51, 108, .15);
+}
+.form-check-input:checked { background-color: var(--pink); border-color: var(--pink); }
+
+/* ===== SUBSOL ===== */
+/* ===== SUBSOL ===== */
+.site-footer {
+  background: var(--cream);
+  border-top: 2px solid var(--blush);
+  padding: .5rem 0;
+  margin-top: 2rem;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+}
+.site-footer .container { width: 100%; }
+.brand-f { color: var(--pink); font-size: 1.3rem; }
+
+/* ===== ACCESIBILITATE ===== */
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--lav); outline-offset: 2px; }
+
+/* ===== TELEFON ===== */
+@media (max-width: 575px) {
+  .hero { padding: 3rem 0; }
+  .blob { min-height: 240px; }
+  .thumb.big { height: 180px; }
+}
